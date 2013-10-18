@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="dev_name">LiveWallpaper Developer</string>
+    <string name="app_name">AE_LiveWallpaper_Test</string>
+    <string name="wallpaper_description">         LiveWallpaper Description</string>
+    <string name="chooseLogos">Choose Logos</string>
+    <string name="chooseOptions">Choose Options</string>
+    <string name="facebook">Like us on Facebook</string>
+    <string name="morefromdeveloper">More from Developer</string>
+    <string name="livewallpaper_settings">Settings</string>
+
+    <string name="summaryLogoOne">Display One</string>
+    <string name="titleLogoOne">One</string>
+    
+    <string name="summaryLogoTwo">Display Two</string>
+    <string name="titleLogoTwo">Two</string>
+
+    <!-- for preferences keys, no need to translate to other languages -->
+    <!-- just copy/paste this as is into other strings.xml files -->
+    <string name="preferenceKeyLogoOne">One</string>
+    <string name="preferenceKeyLogoTwo">Two</string>
+        
+</resources>

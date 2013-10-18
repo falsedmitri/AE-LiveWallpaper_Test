@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="us.nm.state.emnrd.livewallpaper"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-feature
+        android:name="android.software.live_wallpaper"
+        android:glEsVersion="0x00020000"
+        android:required="true" >
+    </uses-feature>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:permission="android.permission.BIND_WALLPAPER"
+        android:theme="@style/AppTheme" >
+    
+        <!-- LiveWallpaper Service -->
+        <service
+            android:name="us.nm.state.emnrd.livewallpaper.LiveWallpaperService"
+            android:description="@string/wallpaper_description"
+            android:enabled="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_WALLPAPER" >
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/wallpaper" />
+        </service>
+
+        <activity
+            android:name="us.nm.state.emnrd.livewallpaper.LiveWallpaperSettings"
+            android:exported="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/livewallpaper_settings"
+            android:theme="@android:style/Theme.Black" >
+        </activity>
+    
+    </application>
+
+</manifest>

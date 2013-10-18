@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	android:title="@string/livewallpaper_settings"    
+    <!-- currently  *_category_key is not used -->
+
+    <PreferenceScreen
+        android:key="female_category_key"
+        android:persistent="false"
+        android:title="@string/chooseLogos" >
+        <PreferenceCategory>
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:icon="@drawable/one"
+                android:key="@string/preferenceKeyLogoOne"
+                android:summary="@string/summaryLogoOne"
+                android:title="@string/titleLogoOne" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:icon="@drawable/two"
+                android:key="@string/preferenceKeyLogoTwo"
+                android:summary="@string/summaryLogoTwo"
+                android:title="@string/titleLogoTwo" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+
+</PreferenceScreen>
